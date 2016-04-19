@@ -27,5 +27,5 @@ http://jsfiddle.net/rocampana/ekoru9tL/1/
  * Opera 8+ (Win, Mac, Linux, Android, iPhone).
 
 ##Dependencies
-* jQuery Formula Plugin needs jQuery 1.7+ o:
+* jQuery Formula Plugin needs jQuery 1.7+ 
 * JQuery Mask Plugin is optional if you intend to use masks with calculated fields

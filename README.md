@@ -18,11 +18,14 @@ http://jsfiddle.net/rocampana/ekoru9tL/
 * http://rafaelcampana.com/plugins/formula/jquery.formula.js
 
 ## Compatibility
--JQuery Mask Plugin is optional if you intend to use masks with calculated fields
--jQuery Formula Plugin has been tested with jQuery 1.7+ on all major browsers:
+
 
  * Firefox 2+ (Win, Mac, Linux);
  * IE7+ (Win);
  * Chrome 6+ (Win, Mac, Linux, Android, iPhone);
  * Safari 3.2+ (Win, Mac, iPhone);
  * Opera 8+ (Win, Mac, Linux, Android, iPhone).
+
+##Dependencies
+* jQuery Formula Plugin needs jQuery 1.7+ o:
+* JQuery Mask Plugin is optional if you intend to use masks with calculated fields

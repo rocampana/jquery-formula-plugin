@@ -7,11 +7,11 @@ Do calculated fields easely
 #Demos & Usage Examples (Try yourself)
 
 * With mask
-http://jsfiddle.net/rocampana/zdx122w5/15/
+https://jsfiddle.net/rocampana/zdx122w5/17/
 
 
 * Without mask
-http://jsfiddle.net/rocampana/ekoru9tL/17/
+https://jsfiddle.net/rocampana/ekoru9tL/1/
 
 ##CDN
 

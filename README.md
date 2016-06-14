@@ -7,7 +7,7 @@ Do calculated fields easely
 #Demos & Usage Examples (Try yourself)
 
 * With mask
-https://jsfiddle.net/rocampana/zdx122w5/17/
+https://jsfiddle.net/rocampana/zdx122w5/18/
 
 
 * Without mask

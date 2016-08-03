@@ -1,6 +1,6 @@
 /**
 * jquery.formula.js
-* @version: v1.0
+* @version: v1.1
 * @author: Rafael Campana
 *
 * Created by Rafael Campana on 2016-04-19. Please report any bug at contato@rafaelcampana.com

@@ -36,7 +36,7 @@ $(function () {
     // looking for inputs with data-formula attribute
     $("input:text[data-formula]").each(function () {
         var formula = $(this).attr('data-formula');
-        var camposEnvolvidos = formula.match(/#([_a-zA-Z0-9]){1,15}#/g); // procura todos campos no padrão #CAMPO#
+        var camposEnvolvidos = formula.match(/#([_a-zA-Z0-9]){1,15}#/g); // procura todos campos no padrÃ£o #CAMPO#
         var campoAtual = $(this);
         var formulaInicial = formula;
 
@@ -45,14 +45,14 @@ $(function () {
             if (!campoEnvolvido)
                 return;
 
-            $(campoEnvolvido).bind('input', function () {//faz bind de uma ou mais funções relacionadas
+            $(campoEnvolvido).bind('input', function () {//faz bind de uma ou mais funÃ§Ãµes relacionadas
                 var formulaFinal = formulaInicial;
                 $.each(camposEnvolvidos, function (keycampo, nomeCampo) {
                     formulaFinal = formulaFinal.replace(nomeCampo, $("[data-variavel ='" + nomeCampo.replace('#', '').replace('#', '') + "'").val().replace(",", "."));
                 });
                 try {
-                    if (camposEnvolvidos.length > 1)
-                        campoAtual.val(eval(formulaFinal).toFixed(4));//Corrige erro da subtração de 0.3 - 0.1 = 0,1999999...
+                    if (camposEnvolvidos.length > 1 || (camposEnvolvidos.length == 1 && $.trim(camposEnvolvidos[0]).toLowerCase() != $.trim(formulaInicial).toLowerCase()))
+                        campoAtual.val(eval(formulaFinal).toFixed(4));//Corrige erro da subtraÃ§Ã£o de 0.3 - 0.1 = 0,1999999...
                     else
                         campoAtual.val(formulaFinal);
 
@@ -67,7 +67,7 @@ $(function () {
                         });
 
                     }
-                    campoAtual.trigger('input');//Realiza chamada das ações associadas à ele
+                    campoAtual.trigger('input');//Realiza chamada das aÃ§Ãµes associadas Ã  ele
                 } catch (e) {
                     //alert ou 
                     campoAtual.val("0");
